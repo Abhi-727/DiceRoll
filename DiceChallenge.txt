@@ -1,0 +1,65 @@
+Dice Challenge :
+--------------
+
+-->Implementation Language - Java.
+
+-->It is based on the input provided through a file,input format allows for expressions like 
+	for Example: 3d6, where 3 represents the number of dice, and 6 represents the number of sides per die.
+
+-->Input Handling:
+   ---------------
+
+    --The program expects a file name as a command-line argument (args[0]).
+    --If no file is provided, it prints a message: "No Input file has been given."
+
+-->File Reading:
+   --------------
+
+   --The Buffered Reader reads the file line by line.
+   --Each line is expected to contain dice roll expressions,
+
+-->Dice Roll Calculation:
+  ------------------------
+
+   --For each expression, the dice roll result is calculated using the resultOfRoll() method. 
+   --minResultCal() and maxResultCal() these methods will calculates the minimum and maximum possible results for the dice.
+
+-->Random Number Generation:
+   -------------------------
+   -->Random class - ensuring that each die roll generates a number between 1 and the maximum number of sides.
+  
+Output:
+-------
+
+  --> For each line in the input file, the program prints:
+  --> The total result of the dice rolls (roll-result).
+  --> The minimum and maximum possible results (min-result and max-result)
+
+Run the Program in the Command Line:
+--------------------------------------
+1) Compile the program with this command:javac RollDice.java
+
+2)java RollDice input.txt
+
+3) ouput will display:
+roll-result : 3
+min-result : 1
+max-result : 6
+
+roll-result : 6
+min-result : 4
+max-result : 11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
